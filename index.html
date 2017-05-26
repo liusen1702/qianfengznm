@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>		
+		<style type="text/css">
+			#loginDiv{
+				position:absolute;
+				left:30%;
+				top:30%;
+				width:300px;
+				height:250px;
+				border:1px solid black;
+				display:none;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<input class="btnClass" type="button" value="回复" onclick="showLogin()" />
+		<div id="loginDiv">
+			<table>
+				<tr>
+					<td colspan="2">
+						<input class="btnClass" type="button" value="关闭" onclick="closeWin()" />
+					</td>					
+				</tr>
+				<tr>
+					<td >用户名：</td>
+					<td ><input  type="text"  /></td>
+				</tr>
+				<tr>
+					<td >密　码：</td>
+					<td ><input  type="password"  /></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input class="btnClass" type="button" value="登录" onclick="loginWin()" />
+					</td>					
+				</tr>
+			</table>
+		
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+function showLogin(){
+	document.getElementById("loginDiv").style.display ="block";
+}
+
+function closeWin(){
+	document.getElementById("loginDiv").style.display ="none";
+}
+
+</script>
